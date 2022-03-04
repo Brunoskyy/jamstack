@@ -33,12 +33,10 @@ interface HomeProps {
 export default function Home({ postsPagination }: HomeProps): ReactNode {
   const { results, next_page } = postsPagination;
 
-  console.log(postsPagination);
-
   const [isPaginated, setPagination] = useState(next_page);
   const [posts, setPosts] = useState<Post[]>(results);
 
-  function handleNewPosts(newPostsUrl: string) {
+  function handleNewPosts(newPostsUrl: string): void {
     fetch(newPostsUrl)
       .then(response => response.json())
       .then(data => {
@@ -58,7 +56,15 @@ export default function Home({ postsPagination }: HomeProps): ReactNode {
             <div className={styles.postInfo}>
               <div>
                 <FiCalendar />
-                <time>{post.first_publication_date}</time>
+                <time>
+                  {format(
+                    new Date(post.first_publication_date),
+                    'dd MMM yyyy',
+                    {
+                      locale: ptBR,
+                    }
+                  )}
+                </time>
               </div>
               <div>
                 <FiUser />
@@ -83,7 +89,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const postsResponse = await prismic.query(
     [Prismic.Predicates.at('document.type', 'posts')],
     {
-      fetchLinks: ['posts.title', 'posts.subtitle'],
+      fetchLinks: ['posts.title', 'posts.subtitle', 'post.author'],
       pageSize: 5,
     }
   );
@@ -91,17 +97,11 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts = postsResponse.results.map(post => {
     return {
       uid: post.uid,
-      first_publication_date: format(
-        new Date(post.last_publication_date),
-        'dd mm yyyy',
-        {
-          locale: ptBR,
-        }
-      ),
+      first_publication_date: post.first_publication_date,
       data: {
         title: post.data.title,
         subtitle: post.data.subtitle,
-        author: 'Artur',
+        author: post.data.author,
       },
     } as Post;
   });

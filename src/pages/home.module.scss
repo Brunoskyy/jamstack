@@ -1,7 +1,7 @@
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 2rem 3rem;
+  padding: 2rem 2rem 3rem;
 
   button {
     border: 0;
@@ -16,6 +16,7 @@
 
   .content {
     display: block;
+    margin-top: 1rem;
 
     h1 {
       font-size: 1.6rem;
@@ -31,27 +32,6 @@
 
     & + .content {
       margin-top: 2rem;
-    }
-  }
-
-  .postInfo {
-    display: flex;
-    justify-content: flex-start;
-
-    margin-top: 2rem;
-
-    div {
-      margin-right: 1rem;
-
-      display: flex;
-      align-items: center;
-
-      p, time {
-        margin-left: 0.5rem;
-
-        font-size: 0.90rem;
-        color: var(--gray-500);
-      }
     }
   }
 }

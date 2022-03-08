@@ -10,6 +10,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { getPrismicClient } from '../services/prismic';
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
+import Header from '../components/Header';
 
 interface Post {
   uid?: string;
@@ -48,12 +49,14 @@ export default function Home({ postsPagination }: HomeProps): ReactNode {
 
   return (
     <div className={styles.container}>
+      <Header />
+
       {posts.map(post => (
         <Link href={`/post/${post.uid}`} key={`${post.uid}`}>
           <a className={styles.content}>
             <h1>{post.data.title}</h1>
             <p>{post.data.subtitle}</p>
-            <div className={styles.postInfo}>
+            <div className={commonStyles.postInfo}>
               <div>
                 <FiCalendar />
                 <time>

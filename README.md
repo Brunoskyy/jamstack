@@ -14,7 +14,7 @@
 
 ## Tópicos
 
-[Sobre o Jamstack Blog](#sobre-o-Jamstack Blog)
+[Sobre o Jamstack Blog](#sobre-o-jamstack-blog)
 
 [Tecnologias](#tecnologias)
 

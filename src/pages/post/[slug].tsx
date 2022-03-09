@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { RichText } from 'prismic-dom';
 import Head from 'next/head';
-import { FiCalendar, FiUser } from 'react-icons/fi';
+import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 
 import { getPrismicClient } from '../../services/prismic';
 import commonStyles from '../../styles/common.module.scss';
@@ -46,6 +46,15 @@ export default function Post({ post }: PostProps): JSX.Element {
   const { first_publication_date, data } = post;
   const { author, banner, content, title } = data;
 
+  const filteredContent = content.reduce(
+    (total, item) => [...total, ...item.body],
+    []
+  );
+
+  const arrayOfWords = RichText.asText(filteredContent).split(' ').length;
+  const averageWordsReadPerMinute = 200;
+  const readingTime = Math.ceil(arrayOfWords / averageWordsReadPerMinute);
+
   return (
     <>
       <Head>
@@ -69,6 +78,10 @@ export default function Post({ post }: PostProps): JSX.Element {
           <div>
             <FiUser />
             <p>{author}</p>
+          </div>
+          <div>
+            <FiClock />
+            <p>{readingTime} min</p>
           </div>
         </div>
 

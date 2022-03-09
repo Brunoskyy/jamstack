@@ -37,23 +37,22 @@ interface PostProps {
 
 export default function Post({ post }: PostProps): JSX.Element {
   const router = useRouter();
-  const { isFallback } = router;
 
-  if (isFallback) {
+  if (router.isFallback) {
     return <p>Carregando...</p>;
   }
 
   const { first_publication_date, data } = post;
   const { author, banner, content, title } = data;
 
-  const filteredContent = content.reduce(
-    (total, item) => [...total, ...item.body],
-    []
-  );
+  const wordsCount = content.reduce((total, item) => {
+    const count = RichText.asText(item.body).split(' ').length;
 
-  const arrayOfWords = RichText.asText(filteredContent).split(' ').length;
+    return total + count;
+  }, 0);
+
   const averageWordsReadPerMinute = 200;
-  const readingTime = Math.ceil(arrayOfWords / averageWordsReadPerMinute);
+  const readingTime = Math.ceil(wordsCount / averageWordsReadPerMinute);
 
   return (
     <>

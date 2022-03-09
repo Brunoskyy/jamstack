@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { useRouter } from 'next/router';
 import Prismic from '@prismicio/client';
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
@@ -35,7 +36,13 @@ interface PostProps {
 }
 
 export default function Post({ post }: PostProps): JSX.Element {
-  console.log(post);
+  const router = useRouter();
+  const { isFallback } = router;
+
+  if (isFallback) {
+    return <p>Carregando...</p>;
+  }
+
   const { first_publication_date, data } = post;
   const { author, banner, content, title } = data;
 

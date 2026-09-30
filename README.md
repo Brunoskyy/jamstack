@@ -1,86 +1,51 @@
-# Jamstack Blog
+# spacetraveling
 
-<p>
-  <img src="https://img.shields.io/badge/made%20by-Artur%20Bruno-blue?style=flat-square&logo=appveyor">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Brunoskyy/jamstack?color=blue&style=flat-square&logo=appveyor">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Brunoskyy/jamstack?color=blue&style=flat-square&logo=appveyor">
-  <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
-  </a>
+<img align="right" src="public/logo.svg" width="30%" alt="">
 
-</p>
-
-<img align="right" src="public/logo.svg" width="35%" alt="Jamstack Blog">
-
-## Tópicos
-
-[Sobre o Jamstack Blog](#sobre-o-jamstack-blog)
-
-[Tecnologias](#tecnologias)
-
-[Instalação e uso](#instalação-e-uso)
-
-[Licença](#licença)
-
-<br>
-
-## Sobre o Jamstack Blog
-
-O Jamstack Blog foi desenvolvido durante um desafio da trilha ReactJS do bootcamp Ignite. O desafio consistia em criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
-
-<br>
+A blog on Next.js with Prismic as the CMS, built in February 2022 for a
+challenge in Rocketseat's Ignite course. The brief was a Figma layout, a
+Prismic repository and a test suite; the pages, the components and the data
+fetching are mine, the tests came with the challenge and had to pass.
 
 <p align="center">
-  <img src="public/cover.png" alt="Página inicial">
+  <img src="public/cover.png" alt="The home page: a list of posts with date and author">
 </p>
 
-## Tecnologias
+## Running it
 
-Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
-
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Sass](https://sass-lang.com/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Prismic CMS](https://prismic.io/)
-
-<br>
-
-## Instalação e uso
+This is a Next.js 10 project and it builds on Node 16. The test suite runs
+fine on newer Node; `next build` does not, because a dependency inside Next
+10 predates package exports.
 
 ```bash
-# Abra um terminal e copie este repositório com o comando
-git clone https://github.com/Brunoskyy/jamstack.git
-# ou use a opção de download.
-
-# Entre na pasta web com
-cd jamstack
-
-# Instale as dependências
-yarn install
-
-# Adicione suas variáveis de ambiente no arquivo .env.example
-# e renomeie o arquivo para .env
-
-# Rode o servidor de desenvolvimento
+nvm use 16
+yarn
+cp .env.example .env   # PRISMIC_API_ENDPOINT=https://<repo>.cdn.prismic.io/api/v2
 yarn dev
 ```
 
-<br>
+```bash
+yarn test              # 11 tests, React Testing Library
+```
 
+You need a Prismic repository with a `posts` custom type holding `title`,
+`subtitle`, `author`, `banner` and a `content` group with `heading` and
+`body`, which is what the course's layout expects.
 
-## Licença
-<a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
-</a>
+## What's in it
 
-<br>
+- Static generation for the home and each post (`getStaticProps`,
+  `getStaticPaths` with fallback), so the site is HTML on a CDN and Prismic is
+  only hit at build time or on the first request for a new post.
+- "Load more" on the home page that walks Prismic's `next_page` cursor.
+- Reading time computed from the post body: count the words, divide by a
+  reading speed, round up.
+- Dates formatted in Portuguese with date-fns.
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+## What's missing
 
----
-
-Feito com :heart: by [Artur Bruno](https://github.com/Brunoskyy)
-
-[![Linkedin Badge](https://img.shields.io/badge/-Artur%20Bruno-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-bruno-b8b409ba/)](https://www.linkedin.com/in/artur-bruno-b8b409ba/)
-[![Gmail Badge](https://img.shields.io/badge/-arturbrunoferreira@gmail.com-blue?style=flat-square&logo=Gmail&logoColor=white&link=mailto:arturbrunoferreira@gmail.com)](mailto:arturbrunoferreira@gmail.com)
+- No comments, no preview mode, no "next post / previous post" links; those
+  were the optional part of the challenge.
+- It is pinned to Next 10 and React 17. I started an upgrade to Next 14 and
+  the app itself moves easily, but the provided tests are written against
+  Next 10's router internals and would need rewriting first.

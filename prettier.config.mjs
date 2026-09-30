@@ -1,1 +1,3 @@
-export default { semi: false, singleQuote: true, printWidth: 100, trailingComma: 'all' }
+const config = { semi: false, singleQuote: true, printWidth: 100, trailingComma: 'all' }
+
+export default config

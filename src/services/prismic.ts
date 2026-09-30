@@ -1,10 +1,9 @@
-import Prismic from '@prismicio/client';
-import { DefaultClient } from '@prismicio/client/types/client';
+import { createClient, type Client } from '@prismicio/client'
 
-export function getPrismicClient(req?: unknown): DefaultClient {
-  const prismic = Prismic.client(process.env.PRISMIC_API_ENDPOINT, {
-    req,
-  });
-
-  return prismic;
+/** The Prismic client, or null when no repository is configured. */
+export function getPrismicClient(): Client | null {
+  const endpoint = process.env.PRISMIC_API_ENDPOINT
+  if (!endpoint) return null
+  const token = process.env.PRISMIC_ACCESS_TOKEN
+  return createClient(endpoint, token ? { accessToken: token } : {})
 }

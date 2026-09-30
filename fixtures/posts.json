@@ -1,0 +1,345 @@
+[
+  {
+    "uid": "como-utilizar-hooks",
+    "first_publication_date": "2021-03-15T19:25:28+0000",
+    "data": {
+      "title": "Como utilizar Hooks",
+      "subtitle": "Pensando em sincronização em vez de ciclos de vida",
+      "author": "Joseph Oliveira",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "criando-um-app-cra-do-zero",
+    "first_publication_date": "2021-03-25T19:27:35+0000",
+    "data": {
+      "title": "Criando um app CRA do zero",
+      "subtitle": "Tudo sobre como criar a sua primeira aplicação utilizando Create React App",
+      "author": "Danilo Vieira",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "estado-derivado",
+    "first_publication_date": "2021-04-02T12:00:00+0000",
+    "data": {
+      "title": "Estado derivado e quando evitar useEffect",
+      "subtitle": "O efeito que só copia um valor para outro estado está escondendo um cálculo",
+      "author": "Ana Lima",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "static-site-generation",
+    "first_publication_date": "2021-04-11T09:30:00+0000",
+    "data": {
+      "title": "Static Site Generation na prática",
+      "subtitle": "Quando pré-renderizar, quando revalidar, e o que fazer com o fallback",
+      "author": "Bruno Costa",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "css-modules-ou-styled",
+    "first_publication_date": "2021-04-20T14:45:00+0000",
+    "data": {
+      "title": "CSS Modules ou styled-components?",
+      "subtitle": "Os dois resolvem escopo; a diferença está em onde o custo aparece",
+      "author": "Ana Lima",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "acessibilidade-formularios",
+    "first_publication_date": "2021-05-03T16:10:00+0000",
+    "data": {
+      "title": "Acessibilidade em formulários",
+      "subtitle": "Rótulos, mensagens de erro e foco: o que o leitor de tela precisa",
+      "author": "Carla Souza",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "uid": "tipagem-de-props",
+    "first_publication_date": "2021-05-17T08:00:00+0000",
+    "data": {
+      "title": "Tipando props sem sofrer",
+      "subtitle": "Interfaces pequenas, uniões discriminadas e o fim do any",
+      "author": "Bruno Costa",
+      "banner": {
+        "url": "/cover.png"
+      },
+      "content": [
+        {
+          "heading": "Por que isso importa",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Este texto faz parte de um conjunto de exemplos usado quando o Prismic não está configurado. Ele existe para que a página abra com conteúdo real, com cabeçalhos, parágrafos e tempo de leitura calculado a partir das palavras que estão aqui.",
+              "spans": []
+            }
+          ]
+        },
+        {
+          "heading": "Na prática",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "A segunda seção repete a ideia com outro cabeçalho, porque um post de verdade raramente tem uma seção só. O tempo de leitura soma as palavras de todas as seções e divide por duzentas palavras por minuto, arredondando para cima.",
+              "spans": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
